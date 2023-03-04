@@ -1,0 +1,154 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Neon', cursive;
+}
+body{
+    min-height: 300vh;
+    background-color: #ffffffcc;
+}
+header{
+    padding: 10px 15px;
+    position: relative;
+    background-color: #ffffff75;
+    border-radius: 0px 0px 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+header .wrapper{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: row;
+    align-items: stretch; 
+    /*İçerisindeki elementlerin yüksekliğini aynı yapmak için*/
+    justify-content: space-between;
+}
+header .wrapper .logo img{
+    width: 100%;
+    max-height: 70px;
+}
+header .wrapper .logo{
+    padding-right: 30px;
+}
+.menu .nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: stretch;
+    height: 100%;
+    padding-right: 100px;
+}
+.menu .nav .item{
+    display: flex;
+    padding: 0 5px;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+.menu .nav .item:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.menu .nav .item .content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.menu .nav .item .icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu .nav .item .icon svg{
+    width: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.menu .nav .item:hover .icon svg{
+    width: 20px;
+    transform: rotateZ(-180deg);
+}
+
+.mobile-menu .menu-icon{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.mobile-menu .menu-icon svg{
+    width: 30px;
+}
+.container{
+    max-width: 1100px;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.banner-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.banner-1 .item{
+    width: calc(25% - 2px);
+    min-width: 200px;
+    min-height: 200px;
+    background-color: cyan;
+    border: 1px solid black;
+}
+/* BİLGİSAYAR - YAN TABLET*/
+@media screen and (min-width: 1024px) {
+    .mobile-menu{
+        display: none;
+    }
+}
+/* BİLGİSAYAR - YAN TABLET*/
+/* TABLET*/
+@media screen and (max-width: 1023px) {
+    .mobile-menu{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+/* TABLET*/
+
+/* YAN TELEFON*/
+@media screen and (max-width: 767px) {
+    .mobile-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+/* YAN TELEFON*/
+
+/* TELEFON*/
+@media screen and (max-width: 480px) {
+    .mobile-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+/* TELEFON*/
