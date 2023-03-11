@@ -104,27 +104,6 @@ header .wrapper .logo{
     align-items: center;
     text-align: center;
 }
-.slider .button{
-    width: 120px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: rgb(50, 50, 185);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all ease-in-out 0.5s;
-}
-.slider .button:hover{
-    transform: scale(1.05);
-    transition: all ease-in-out 0.5s;
-}
-.slider .button p{
-    color: white;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .slider .foto img{
     position: relative;
 }
@@ -132,15 +111,89 @@ header .wrapper .logo{
     display: flex;
     position: absolute;
     left: -1%;
+    top: 500px;
     z-index: 0;
 }
 .slider .foto .rigth{
     display: flex;
     position: absolute;
     right: 0;
-    top: 450px;
+    top: 590px;
     z-index: 0;
 }
+button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
+/* CONTACT-US */
+.contact-us{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+  .contact-us .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+  }
+  
+  .contact-us .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .contact-us .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+  }
+  
+  .contact-us .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .contact-us .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .contact-us .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+  }
+/* CONTACT-US */
+
 /*BİLGİSAYAR - YAN TABLET*/
     @media  screen and (min-width: 1024px) {
         .mobile-menu{
