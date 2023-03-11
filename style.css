@@ -6,7 +6,7 @@ html,body{
 }
 body{
     min-height: 300vh;
-    background-color: #e7e7e7b1;
+    background-color: #ffffffb1;
     overflow-x: hidden;
 }
 header{
@@ -31,7 +31,7 @@ header .wrapper{
 }
 header .wrapper .logo img{
     width: 100%;
-    max-height: 45px;
+    max-height: 60px;
 }
 header .wrapper .logo{
     padding-right: 30px;
@@ -89,12 +89,58 @@ header .wrapper .logo{
 .mobile-menu .menu-icon svg{
     width: 30px;
 }
-
 .slider{
-    position: relative;
-    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px;
+    gap: 30px;
 }
-
+.slider .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slider .button{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(50, 50, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+}
+.slider .button:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.5s;
+}
+.slider .button p{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .foto img{
+    position: relative;
+}
+.slider .foto .left{
+    display: flex;
+    position: absolute;
+    left: -1%;
+    z-index: 0;
+}
+.slider .foto .rigth{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 450px;
+    z-index: 0;
+}
 /*BİLGİSAYAR - YAN TABLET*/
     @media  screen and (min-width: 1024px) {
         .mobile-menu{
