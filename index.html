@@ -17,14 +17,20 @@
     <header>
         <div class="wrapper">
             <div class="logo">
-                <img src="images/logo1.png" alt="">
+                <img src="images/logo1.png">
             </div>
             <div class="menu">
                 <div class="nav">
                     <a class="item">
-                        <div class="content">
+                        <div class="content" href="index.html">
                             Ana Sayfa
                         </div>
+                        <!-- <div class="icon">
+                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </div> -->
                     </a>
                     <a class="item">
                         <div class="content">
@@ -63,7 +69,7 @@
             </div>
             <div class="mobile-menu-icon active">
                 <div class="menu-icon">
-                    <svg id="burger-icon" fill="black" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
+                    <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
                         <path
                             d="M480 224H32a32 32 0 0 0 0 64h448a32 32 0 0 0 0-64zM32 138.67h448a32 32 0 0 0 0-64H32a32 32 0 0 0 0 64zm448 234.66H32a32 32 0 0 0 0 64h448a32 32 0 0 0 0-64z" />
                     </svg>
@@ -71,6 +77,7 @@
             </div>
         </div>
     </header>
+
     <div class="mobile-menu-container">
         <div class="mobile-menu">
             <div class="top-menu">
@@ -81,7 +88,7 @@
                         fill-rule="evenodd" />
                 </svg>
                 <div class="logo">
-                    <img src="images/apple_logo.png" alt="">
+                    <img src="images/logo1.png" alt="">
                 </div>
             </div>
             <div class="nav-menu">
@@ -136,7 +143,6 @@
         </div>
     </div>
 
-
     <div class="slider">
         <div class="text">
             <h1>
@@ -146,27 +152,19 @@
                 Siz de Amean Danışmanlığa kaydolun ve hayatınızı değiştirin. <br> Hadi Durmayın!
             </p>
         </div>
-        <button>
+        <button style="z-index: 999;">
             Kaydol
         </button>
         <div class="foto">
-            <svg class="left" width="352" height="565" viewBox="0 0 352 565" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M189.62 57.8893C120.139 -28.4382 0 7.35613 0 7.35613V547C0 547 30.1988 561.817 155.208 563.922C280.217 566.028 297.774 541.738 315.332 524.619C332.889 507.5 375.325 428 332.889 344.244C290.454 260.487 209.285 257.214 189.62 217.911C169.956 178.607 259.102 144.217 189.62 57.8893Z"
-                    fill="#6AB548" />
+            <svg class="left" width="352" height="565" viewBox="0 0 352 565" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M189.62 57.8893C120.139 -28.4382 0 7.35613 0 7.35613V547C0 547 30.1988 561.817 155.208 563.922C280.217 566.028 297.774 541.738 315.332 524.619C332.889 507.5 375.325 428 332.889 344.244C290.454 260.487 209.285 257.214 189.62 217.911C169.956 178.607 259.102 144.217 189.62 57.8893Z" fill="#3035BE"/>
             </svg>
-
-
-
-            <img src="images/foto2.png" style="width: 60vw; z-index: 9;" alt="">
-
-            <svg class="rigth" width="391" height="470" viewBox="0 0 391 470" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M227.108 6.47029C275.53 -9.67451 391 13.9217 391 13.9217V374.271C391 374.271 265.5 374.271 190.278 445C115.055 515.729 30.7311 407.743 30.7311 407.743C30.7311 407.743 -17.2862 335.018 6.72241 256.971C30.731 178.924 30.7311 175.5 64.5 127C76.5586 109.681 87.911 94.9762 97.524 83.2269C115.893 60.7754 139.404 43.3471 165.76 31.2294C183.759 22.9542 205.798 13.5754 227.108 6.47029Z"
-                    fill="#FBAE1B" />
+            
+            <img src="images/foto7.png" style="width: 85vw; z-index: 9;" alt="">
+            <svg class="rigth" width="391" height="470" viewBox="0 0 391 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M227.108 6.47029C275.53 -9.67451 391 13.9217 391 13.9217V374.271C391 374.271 265.5 374.271 190.278 445C115.055 515.729 30.7311 407.743 30.7311 407.743C30.7311 407.743 -17.2862 335.018 6.72241 256.971C30.731 178.924 30.7311 175.5 64.5 127C76.5586 109.681 87.911 94.9762 97.524 83.2269C115.893 60.7754 139.404 43.3471 165.76 31.2294C183.759 22.9542 205.798 13.5754 227.108 6.47029Z" fill="#FF574D"/>
             </svg>
+                
 
 
         </div>
@@ -184,6 +182,7 @@
                     </label>
                 </div>
                 <div class="form-control">
+                        
                     <input type="value" required="">
                     <label>
                         <span style="transition-delay:0ms">K</span><span style="transition-delay:50ms">o</span><span
@@ -203,12 +202,13 @@
                     </label>
                 </div>
                 <button>
-                    Giriş Yap
+                    Mesaj Gönder
                 </button>
             
             </div>
+        </div>
     </div>
-       </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

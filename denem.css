@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    min-height: 400vh;
+    min-height: 300vh;
     background-color: #ffffffb1;
     overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ header .wrapper .logo {
     padding-right: 30px;
 }
 
-.menu .nav{
+.menu .nav {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -51,7 +51,8 @@ header .wrapper .logo {
     height: 100%;
     padding-right: 100px;
 }
-.menu .nav .item{
+
+.menu .nav .item {
     display: flex;
     padding: 0 5px;
     flex-direction: row;
@@ -60,51 +61,50 @@ header .wrapper .logo {
     align-items: stretch;
     height: 100%;
     transition: all ease-in-out 0.3s;
-    color: black;
+    color: rgb(0, 0, 0);
 }
-.menu .nav .item:hover{
-    transform: scale(1.05);
+
+.menu .nav .item:hover {
     transition: all ease-in-out 0.3s;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.menu .nav .item .content{
+.menu .nav .item .content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 16px;
 }
-.menu .nav .item .icon{
+
+.menu .nav .item .icon {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.menu .nav .item .icon svg{
+
+.menu .nav .item .icon svg {
     width: 20px;
     transition: all ease-in-out 0.3s;
 }
 
-.menu .nav .item:hover .icon svg{
+.menu .nav .item:hover .icon svg {
     width: 20px;
     transform: rotateZ(-180deg);
 }
 
-.mobile-menu-icon .menu-icon{
+.mobile-menu .menu-icon {
     padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    cursor: pointer;
-}
-.mobile-menu-icon .menu-icon:hover{
-    scale: 1.05;
 }
 
-.mobile-menu-icon .menu-icon svg{
+.mobile-menu .menu-icon svg {
     width: 30px;
 }
-/* SLIDER */
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -124,9 +124,6 @@ header .wrapper .logo {
 
 .slider .foto img {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .slider .foto .left {
@@ -140,7 +137,7 @@ header .wrapper .logo {
 .slider .foto .rigth {
     display: flex;
     position: absolute;
-    right: -3%;
+    right: 0;
     top: 590px;
     z-index: 0;
 }
@@ -167,110 +164,6 @@ button:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
 }
-/* SLIDER */
-
-
-/*MOBILE MENU*/
-.mobile-menu-container{
-    /* background: #0000007d; */
-    z-index: 9999;
-    cursor: pointer;
-}
-.mobile-menu-container .mobile-menu{
-    position: fixed;
-    left: -100%;
-    top: 0;
-    width: 20%;
-    cursor: auto;
-    min-width: 300px;
-    height: calc(100vh - 40px);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 20px 30px;
-    border-radius: 0 20px 20px 0 ; 
-    z-index: 1000;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: all ease-in-out .6s;
-}
-.mobile-menu-container.active .mobile-menu{
-    left: 0;
-}
-.mobile-menu-container .mobile-menu .top-menu #close-mobile-menu{
-    cursor: pointer;
-}
-.mobile-menu .top-menu{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.mobile-menu .top-menu svg{
-    width: 15px;
-    height: 15px;
-    fill: rgb(55, 55, 55);
-    stroke: rgb(55, 55, 55);
-    transition: all ease-in-out 1.5s;
-}
-.mobile-menu .top-menu svg:hover{
-    scale: 1.05;
-    fill: rgb(0, 0, 0);
-    stroke: rgb(0, 0, 0);
-    transform: rotateZ(360deg);
-
-}
-
-.mobile-menu .top-menu .logo img{
-    max-width: 60px;
-}
-
-.mobile-menu .nav-menu{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow-y: scroll;
-    width: 100%;
-    max-height: 80vh;
-    margin-top: 50px;
-    transition: all ease-in-out 0.5s;
-    cursor: pointer;
-}
-.nav-menu::-webkit-scrollbar{
-    display: none;
-}
-.mobile-menu .nav-menu .item{
-    display: flex;
-    width: calc(100% - 20px);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all ease-in-out 0.5s;
-}
-
-.nav-menu .item .content{
-    font-size: 18px;
-    letter-spacing: -0.5px;
-}
-.nav-menu .item .icon svg{
-    width: 20px;
-    height: 20px;
-    transition: all ease-in-out 0.5s;
-}
-.nav-menu .item:hover .icon svg{
-    transform: rotateZ(-180deg);
-}
-.nav-menu .item:hover{
-    background: rgb(240, 240, 240);
-    transition: all ease-in-out 0.3s;
-}
-/*MOBILE MENU*/
 
 /* CONTACT-US */
 .contact-us{
@@ -341,99 +234,47 @@ button:active {
 
 /* CONTACT-US */
 
-
-/* FOOTER */
-/* footer{
-    width: 100%;
-    height: 60vh;  
-    background-color: rgb(35, 37, 82);
-    transition: all ease-in-out 0.5s;
-}
-.footer-wrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-.footer-wrapper .footer-logo img{
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content:flex-start;
-    padding: 50px 20px;
-}
-.footer-wrapper .footer-menu .footer-nav{
-    display: flex;
-    flex-direction: row;
-    padding: 50px 30px;
-}
-.footer-wrapper .footer-menu .footer-nav .footer-content:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
-.footer-wrapper .footer-menu .footer-nav .footer-content{
-    transition: all ease-in-out 0.3s;
-    color: white;
-    font-size: 16px;
-}
-.footer-wrapper .footer-menu .footer-nav .footer-item .footer-title{
-    color: rgb(70, 74, 158);
-    font-size: 25px;
-}
-.footer-wrapper .footer-nav .footer-item{
-    padding: 50px 40px;
-} */
-
-/* FOOTER */
-
-
-
-/* BİLGİSAYAR - YAN TABLET*/
+/*BİLGİSAYAR - YAN TABLET*/
 @media screen and (min-width: 1024px) {
-    .mobile-menu-icon{
+    .mobile-menu {
         display: none;
     }
 }
 
-/* BİLGİSAYAR - YAN TABLET*/
-/* TABLET*/
+/*BİLGİSAYAR - YAN TABLET*/
+/*TABLET*/
 @media screen and (max-width: 1023px) {
-    .mobile-menu-icon{
+    .mobile-menu {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
     }
 }
 
-/* TABLET*/
-
-/* YAN TELEFON*/
+/*TABLET*/
+/*YAN TELEFON*/
 @media screen and (max-width: 767px) {
-    .mobile-menu-icon{
+    .mobile-menu {
         display: block;
     }
-    .menu{
-        display: none;
-    }
 
-    .slider .buttons{
+    .menu {
         display: none;
-    }
-    .mobile-menu-container .mobile-menu{
-        width: calc(100% - 60px);
-        border-radius: 0;
     }
 }
-/* YAN TELEFON*/
 
-/* TELEFON*/
+/*YAN TELEFON*/
+/*TELEFON*/
 @media screen and (max-width: 480px) {
-    .mobile-menu-icon{
+    .mobile-menu {
         display: block;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 }
-/* TELEFON*/
+
+/*TELEFON*/
