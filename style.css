@@ -274,72 +274,159 @@ button:active {
 
 /* CONTACT-US */
 .contact-us{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    padding-top: 190px;
 }
+
 .contact-wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input-container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.info-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.address{
+    width: 80%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.address:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.05);
+}
+.address-main{
+    width: 100%;
+    height: 49%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding-top: 5px;
+}
+.address-icon{
+    width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 50%;
-    height: 50vh;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.form-control {
-    position: relative;
-    margin: 20px 0 40px;
-    width: 300px;
+.address-icon svg{
+    width: 25px;
 }
-
-.form-control input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px black solid;
-    display: block;
+.address-title{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.address-text{
     width: 100%;
-    padding: 15px 0;
-    font-size: 18px;
-    color: black;
+    height: 49%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.388);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
-
-.form-control input:focus,
-.form-control input:valid {
-    outline: 0;
-    border-bottom-color: gray;
-}
-
-.form-control label {
+.input-group {
+    position: relative;
+   }
+   
+   .input {
+    width: 250px;
+    border: solid 1.5px #9e9e9e;
+    border-radius: 0.7rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
     position: absolute;
-    top: 15px;
-    left: 0;
+    left: 15px;
+    color: #8f8f8f;
     pointer-events: none;
-}
-
-.form-control label span {
-    display: inline-block;
-    font-size: 18px;
-    min-width: 5px;
-    color: black;
-    -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.form-control input:focus+label span,
-.form-control input:valid+label span {
-    color: gray;
-    -webkit-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    transform: translateY(-30px);
-}
-
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #000000;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 .2em;
+    color: #000000;
+   }
 /* CONTACT-US */
+
+/* ABOUT-US */
+.about-us{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .title{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+.about-us .text p{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+/* ABOUT-US */
 
 
 /* FOOTER */
