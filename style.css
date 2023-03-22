@@ -282,6 +282,7 @@ button:active {
     justify-content: center;
     padding: 10px 10px;
     padding-top: 190px;
+    padding-bottom: 150px;
 }
 
 .contact-wrapper{
@@ -452,7 +453,7 @@ footer {
     background-color: #1a2a42;
     color: #fff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 110vw;
@@ -465,25 +466,80 @@ footer .footer-container{
 footer .footer-container .row{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 80px;
 }
 footer .footer-container .row .col-4 img{
     width: 75px;
     height: auto;
+    gap: 10px;
 }
 footer .footer-container .row .col-4 .title{
-    color: white;
+    color: rgba(255, 255, 255, 0.824);
     cursor: pointer;
-    font-size: 16px;
-    transition: all ease-in-out 0.6s;
+    transition: all ease-in-out 0.5s;
+    gap: 20px;
+}
+footer .footer-container .row .col-4 .footer-title{
+    font-size: 22px;
+    gap: 20px;
+    display: flex;
 }
 footer .footer-container .row .col-4 .title:hover{
- transition: all ease-in-out 0.6s;
- transform: scale(1.02);
+ transition: all ease-in-out 0.5s;
+ transform: scale(1.04);
+}
+footer .footer-container .row .col-4 .fa-phone{
+    color: rgba(255, 255, 255, 0.824);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+footer .footer-container .row .col-4 .fa-phone:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.04);
+}
+
+footer .footer-container .row .col-4 .fa-envelope{
+    color: rgba(255, 255, 255, 0.713);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+footer .footer-container .row .col-4 .fa-envelope:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.04);
+}
+footer .footer-container .row .col-4 .fa-map-marker{
+    color: rgba(255, 255, 255, 0.713);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+footer .footer-container .row .col-4 .fa-map-marker:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.04);
+}
+footer .hr{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    margin: 35px;
+}
+footer .hr .copyright{
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.859);
+    transition: all ease-in-out 0.5s;
+}
+footer .hr .copyright:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.5s;
 }
 /* FOOTER */
-
-
 
 /* BİLGİSAYAR - YAN TABLET*/
 @media screen and (min-width: 1024px) {
