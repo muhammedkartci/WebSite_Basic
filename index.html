@@ -25,45 +25,24 @@
                         <div class="content" href="index.html">
                             Ana Sayfa
                         </div>
-                        <!-- <div class="icon">
-                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6" />
-                            </svg>
-                        </div> -->
                     </a>
                     <a class="item">
                         <div class="content">
                             Hakkımızda
                         </div>
-                        <div class="icon">
-                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6" />
-                            </svg>
-                        </div>
+                        
                     </a>
                     <a class="item">
                         <div class="content">
                             İletişim
                         </div>
-                        <div class="icon">
-                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6" />
-                            </svg>
-                        </div>
+                        
                     </a>
                     <a class="item">
                         <div class="content">
                             Ekibimiz
                         </div>
-                        <div class="icon">
-                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6" />
-                            </svg>
-                        </div>
+                        
                     </a>
                 </div>
             </div>
@@ -198,20 +177,76 @@
     <!-- ABOUT-US -->
 
     <!-- CONTACT-US -->
-    <form>
-        <label for="ad">Adınız:</label><br>
-        <input type="text" id="ad" name="ad"><br>
-        <label for="soyad">Soyadınız:</label><br>
-        <input type="text" id="soyad" name="soyad"><br>
-        <label for="email">E-posta Adresiniz:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="konu">Konu:</label><br>
-        <input type="text" id="konu" name="konu"><br>
-        <label for="mesaj">Mesajınız:</label><br>
-        <textarea id="mesaj" name="mesaj" rows="5" cols="30"></textarea><br><br>
-        <input type="submit" value="Gönder">
-      </form>
-      
+    <div class="contact-us">
+        <div class="contact-wrapper">
+            <div class="input-container" style="gap: 20px;">
+                <div class="input-group">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">E-posta</label>
+                </div>
+                <div class="input-group">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Konu Başlığı</label>
+                </div>
+                <div class="input-group">
+                    <input required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Mesaj</label>
+                </div>
+
+                <button style="z-index: 999;">
+                    Mesaj Gönder
+                </button>
+            </div>
+            <div class="info-container">
+                <div class="address">
+                    <div class="address-main">
+                        <div class="address-icon">
+                            <svg viewBox="0 0 19 22" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#200E32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1.49 9.141a7.678 7.678 0 1115.356.052v.087c-.053 2.757-1.592 5.305-3.479 7.296a20.186 20.186 0 01-3.59 2.957.93.93 0 01-1.218 0 19.817 19.817 0 01-5.052-4.73 9.826 9.826 0 01-2.018-5.636v-.026z"/><path d="M9.167 11.75a2.46 2.46 0 100-4.922 2.46 2.46 0 000 4.922z"/></g></svg>
+                        </div>
+                        <div class="address-title">
+                            <h4>
+                                Adres
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="address-text" style="display: flex; justify-content: start; align-items: center; padding-left: 25px;">
+                        Kanal Mah. 4710 Sok.
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="address-main">
+                        <div class="address-icon">
+                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24"><path d="M15.05 5A5 5 0 0119 8.95M15.05 1A9 9 0 0123 8.94m-1 7.98v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div class="address-title">
+                            <h4>
+                                Telefon
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="address-text" style="display: flex; justify-content: start; align-items: center; padding-left: 25px;">
+                        +90 123 456 78 89
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="address-main">
+                        <div class="address-icon">
+                            <svg stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <div class="address-title">
+                            <h4>
+                                E-mail
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="address-text">
+                        ameandanismanlik@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- CONTACT-US -->
     <!-- FOOTER -->
     <footer>
@@ -219,7 +254,7 @@
           <div class="row">
             <div class="col-4">
                 <img src="images/logo2.png" alt="">
-              <p>Hadi Siz de Gelin ve Geleceğinizi <br>
+              <p class="footer-text">Hadi Siz de Gelin ve Geleceğinizi <br>
                 Şimdiden İnşa Edin!</p>
             </div>
             <div class="col-4">
@@ -235,6 +270,13 @@
                 <a class="fa-envelope">info@ameandanismanlik.com</a> 
                 <a class="fa-map-marker">Kanal Mah., Antalya, Türkiye</a> 
 
+            </div>
+            <div class="socail-media">
+                <div class="icon">
+                    <div class="insta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><linearGradient id="_1646198408__a" y1="100%"><stop offset="0%" stop-color="#ffd520"></stop><stop offset="49%" stop-color="#f50000"></stop><stop offset="100%" stop-color="#b900b4"></stop></linearGradient><path fill="url(#_1646198408__a)" d="M12 3c-2.44 0-2.75.01-3.71.05-.96.05-1.61.2-2.19.42a4.4 4.4 0 0 0-1.59 1.04c-.5.5-.8 1-1.04 1.6a6.6 6.6 0 0 0-.42 2.18C3.01 9.25 3 9.56 3 12s.01 2.75.05 3.71c.05.96.2 1.61.42 2.19.23.59.54 1.09 1.04 1.59s1 .8 1.6 1.04a6.6 6.6 0 0 0 2.18.42c.96.04 1.27.05 3.71.05s2.75-.01 3.71-.05c.96-.05 1.61-.2 2.19-.42a4.4 4.4 0 0 0 1.59-1.04c.5-.5.8-1 1.04-1.6a6.6 6.6 0 0 0 .42-2.18c.04-.96.05-1.27.05-3.71s-.01-2.75-.05-3.71a6.62 6.62 0 0 0-.42-2.19 4.4 4.4 0 0 0-1.04-1.59c-.5-.5-1-.8-1.6-1.04a6.6 6.6 0 0 0-2.18-.42C14.75 3.01 14.44 3 12 3zm0 1.62c2.4 0 2.69.01 3.64.05.87.04 1.35.2 1.67.31.42.17.72.36 1.03.68.32.31.51.61.68 1.03.12.32.27.8.3 1.67.05.95.06 1.24.06 3.64 0 2.4-.01 2.69-.06 3.64-.04.87-.19 1.35-.31 1.67-.17.42-.36.72-.68 1.03-.31.32-.62.51-1.03.68-.32.12-.8.27-1.68.3-.95.05-1.24.06-3.64.06-2.41 0-2.7-.01-3.65-.06a5.12 5.12 0 0 1-1.67-.31 2.8 2.8 0 0 1-1.04-.68 2.75 2.75 0 0 1-.67-1.03c-.13-.32-.27-.8-.32-1.68-.03-.94-.04-1.24-.04-3.63 0-2.4 0-2.7.04-3.65.05-.87.2-1.36.32-1.67.15-.43.36-.72.67-1.04a2.67 2.67 0 0 1 1.04-.67c.31-.13.78-.27 1.66-.32.96-.03 1.24-.04 3.65-.04l.03.02zm0 2.76a4.62 4.62 0 1 0 0 9.24 4.62 4.62 0 0 0 0-9.24zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.88-7.8a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0z"></path></svg>
+                    </div>
+                </div>
             </div>
           </div>
           <!-- <p style="display: flex; justify-content: ; align-items: center;">Made by Muhammed. ©2023-2024</p> -->

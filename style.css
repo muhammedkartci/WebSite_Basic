@@ -45,7 +45,7 @@ header .wrapper .logo {
 .menu .nav{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 15px;
     align-items: stretch;
     height: 100%;
     padding-right: 100px;
@@ -155,6 +155,7 @@ button {
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
     box-shadow: 0 0 0 0 black;
+    z-index: -111;
 }
 
 button:hover {
@@ -274,7 +275,7 @@ button:active {
 /* CONTACT-US */
 .contact-us{
     width: calc(100% - 10px);
-    height: 450px;
+    height: 400px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -286,7 +287,7 @@ button:active {
 }
 
 .contact-wrapper{
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -473,6 +474,9 @@ footer .footer-container .row .col-4 img{
     height: auto;
     gap: 10px;
 }
+footer .footer-container .row .col-4 .footer-text{
+    color: rgba(255, 255, 255, 0.787);
+}
 footer .footer-container .row .col-4 .title{
     color: rgba(255, 255, 255, 0.824);
     cursor: pointer;
@@ -521,9 +525,9 @@ footer .hr{
     height: 1px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.355);
     align-items: center;
-    margin: 35px;
+    margin: 32px;
 }
 footer .hr .copyright{
     margin: 10px;
@@ -534,10 +538,18 @@ footer .hr .copyright{
     justify-content: center;
     color: rgba(255, 255, 255, 0.859);
     transition: all ease-in-out 0.5s;
+    bottom: 10px;
 }
 footer .hr .copyright:hover{
     transform: scale(1.05);
     transition: all ease-in-out 0.5s;
+}
+footer .footer-container .row .social-media{
+    width: 25%;
+    height: 70%;
+}
+footer .footer-container .row .social-media .insta-icon svg{
+    width: 35;
 }
 /* FOOTER */
 
