@@ -26,3 +26,5 @@ open_button_mobile_menu.onclick = (event) => {
     event.stopPropagation();
     openMobileMenu();
 }
+
+    

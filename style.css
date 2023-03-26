@@ -40,6 +40,7 @@ header .wrapper .logo img {
 
 header .wrapper .logo {
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .menu .nav{
@@ -281,7 +282,7 @@ header .wrapper .logo {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(48, 53, 190);
+    background-color: rgb(111, 88, 255);
     margin-bottom: 20px;
   }
   
@@ -360,16 +361,17 @@ header .wrapper .logo {
   
 /* CONTACT-US */
 
-/* ABOUT-US */
-.about-us{
+/* ANASAYFA-ABOUT-US */
+.index-about-us{
     width: 100%;
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
-.about-us .title{
+.index-about-us .title{
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -377,7 +379,7 @@ header .wrapper .logo {
     align-items: flex-start;
     text-align: left;
 }
-.about-us .text p{
+.index-about-us .text p{
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -385,9 +387,99 @@ header .wrapper .logo {
     align-items: center;
     text-align: justify;
 }
-.about-us .foto{
+.index-about-us .foto{
     max-width:600px;
 }
+.title .about-us-button[type="submit"] {
+    background-color: rgb(48, 53, 190);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    text-decoration: none;
+    display: flex;
+  }
+.title .about-us-button[type="submit"]:hover {
+    background-color: rgb(48, 53, 190);
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.05);
+  }
+/* ANASAYFA-ABOUT-US */
+/* ABOUT-US */
+.about-us{
+    margin-top: 150px;
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.about-us .about-us-left{
+    width: 50%;
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.about-us .about-us-left .logo{
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .about-us-left .logo img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    align-items: center;
+}
+.about-us .about-us-left .slogan h1{
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+}
+.about-us .about-us-right{
+    margin-right: 90px;
+}
+.about-us .about-us-right .info .about-us-title p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-us .about-us-right .info .about-us-text{
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: 100;
+}
+.about-us-right .alanlarimiz{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+.about-us-right .alanlarimiz .un-list{
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+}
+.about-us-right .alanlarimiz .list{
+    color: #1a2a42a3;
+    cursor: pointer;
+    font-size: 18px;
+    gap: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.about-us-right .alanlarimiz .list:hover{
+    transition: all ease-in-out 0.5s;
+    scale: 1.02;
+}
+
 /* ABOUT-US */
 
 
@@ -411,10 +503,11 @@ footer .footer-container .row{
     flex-direction: row;
     gap: 80px;
 }
-footer .footer-container .row .col-4 img{
+footer .footer-container .row .col-4 .footer-logo img{
     width: 75px;
     height: auto;
     gap: 10px;
+    cursor: pointer;
 }
 footer .footer-container .row .col-4 .footer-text{
     color: rgba(255, 255, 255, 0.787);
