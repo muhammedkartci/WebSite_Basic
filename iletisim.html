@@ -58,6 +58,9 @@
     </header>
     <!-- CONTACT-US -->
     <div class="contact-us">
+        <div class="contact-foto">
+            <img src="images/contact-foto.avif" alt="">
+        </div>
         <div class="contact-info">
           <h2>İletişime Geç</h2>
           <p>Adres: 123 Main Street<br>Anytown, USA 12345<br>Telefon: (123) 456-7890</p>
@@ -78,6 +81,7 @@
       
           <button class="contact-us-button" type="submit">Gönder</button>
         </form>
+        
       </div>
     <!-- CONTACT-US -->
       
@@ -86,16 +90,18 @@
         <div class="footer-container">
           <div class="row">
             <div class="col-4">
-                <img src="images/logo2.png" alt="">
-              <p class="footer-text">Hadi Siz de Gelin ve Geleceğinizi <br>
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo2.png" alt="">
+                </a>
+                <p class="footer-text">Hadi Siz de Gelin ve Geleceğinizi <br>
                 Şimdiden İnşa Edin!</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" style="display: flex; flex-direction:column; gap:8px;">
               <h3 class="footer-title">Sayfalar</h3>
-               <p class="title">Ana Sayfa</p>
-               <p class="title">Hakkımızda</p>
-               <p class="title">İletişim</p>
-               <p class="title">Ekibimiz</p>
+               <a style="text-decoration:none" href="index.html" class="title">Ana Sayfa</a>
+               <a style="text-decoration:none" href="hakkimizda.html" class="title">Hakkımızda</a>
+               <a style="text-decoration:none" href="iletisim.html" class="title">İletişim</a>
+               <a style="text-decoration:none" href="ekibimiz.html" class="title">Ekibimiz</a>
             </div>
             <div class="col-4" style="display: flex; flex-direction: column; gap: 5px;">
               <h3 class="footer-title">İletişim</h3>
@@ -135,7 +141,6 @@
             </div>
         </div>
       </footer>
-
     <!-- FOOTER -->
     <script src="script.js"></script>
 </body>
