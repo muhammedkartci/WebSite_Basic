@@ -85,20 +85,20 @@
                 </div>
                 <div class="alanlarimiz">
                     <h3>Alanlarımız</h3>
-                    <div class="un-list">
-                        <div class="list">
-                            Yazılım
-                        </div>
-                        <div class="list"> 
-                            YKS Eğitimi
-                        </div>
-                        <div class="list">
-                            LGS Eğitimi
-                        </div>
-                        <div class="list"> 
-                            Müzik Dersleri
-                        </div>
-                    </div>
+                    <div class="radio-inputs">
+                        <label class="radio">
+                          <input type="radio" name="radio" checked="">
+                          <span class="name">Yazılım Eğitimi</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" checked="">
+                            <span class="name">YKS Danışmanlığı</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio" checked="">
+                            <span class="name">Müzik Eğitimleri</span>
+                          </label>
+                      </div>
                 </div>
             </div>
             <div class="about-us-bottom">
@@ -117,16 +117,18 @@
         <div class="footer-container">
           <div class="row">
             <div class="col-4">
-                <img src="images/logo2.png" alt="">
-              <p class="footer-text">Hadi Siz de Gelin ve Geleceğinizi <br>
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo2.png" alt="">
+                </a>
+                <p class="footer-text">Hadi Siz de Gelin ve Geleceğinizi <br>
                 Şimdiden İnşa Edin!</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" style="display: flex; flex-direction:column; gap:8px;">
               <h3 class="footer-title">Sayfalar</h3>
-               <p class="title">Ana Sayfa</p>
-               <p class="title">Hakkımızda</p>
-               <p class="title">İletişim</p>
-               <p class="title">Ekibimiz</p>
+               <a style="text-decoration:none" href="index.html" class="title">Ana Sayfa</a>
+               <a style="text-decoration:none" href="hakkimizda.html" class="title">Hakkımızda</a>
+               <a style="text-decoration:none" href="iletisim.html" class="title">İletişim</a>
+               <a style="text-decoration:none" href="ekibimiz.html" class="title">Ekibimiz</a>
             </div>
             <div class="col-4" style="display: flex; flex-direction: column; gap: 5px;">
               <h3 class="footer-title">İletişim</h3>
@@ -166,6 +168,7 @@
             </div>
         </div>
       </footer>
+
 
 
     <!-- FOOTER -->
