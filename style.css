@@ -133,16 +133,18 @@ header .wrapper .logo {
 .slider .foto .left {
     display: flex;
     position: absolute;
-    left: -1%;
-    top: 500px;
+    left: -7%;
+    top: 560px;
     z-index: 0;
+    width: 30%;
 }
 
 .slider .foto .rigth {
     display: flex;
     position: absolute;
-    right: -3%;
-    top: 590px;
+    right: -7%;
+    top: 600px;
+    width: 30%;
     z-index: 0;
 }
 
@@ -282,23 +284,17 @@ header .wrapper .logo {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-bottom: 20px;
-  }
-  .contact-us .contact-foto{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    margin-left: 530px;
-  }
-  .contact-us .contact-foto img{
-    width: 270px;
-    height: auto;
+    gap:50px
   }
   .contact-info {
     text-align: center;
     color: #000000;
     font-size: 24px;
     margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .contact-info h2 {
@@ -308,10 +304,26 @@ header .wrapper .logo {
   
   .contact-info p {
     margin-bottom: 0;
+    font-size: 20px;
   }
-  
+
+  .contact-info img{
+    width: 370px;
+  }
+  .iframe{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px
+  }
+  .iframe iframe{
+    width: 100vw;
+    border-radius: 10px;
+    filter: brightness(0.6);
+  }
   form {
-    width: 350px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -601,7 +613,7 @@ header .wrapper .logo {
 }
 .about-us .about-us-left{
     width: 50%;
-    margin-left: 100px;
+    margin-left: 120px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -714,7 +726,7 @@ header .wrapper .logo {
   }
 .about-us-bottom{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     margin-bottom: 150px;
@@ -737,6 +749,7 @@ header .wrapper .logo {
     align-items: center;
     margin-right: 200px;
     color: white;
+    margin-bottom: 100px;
 }
 .about-us-bottom .bottom-left p{
     display: flex;
@@ -746,6 +759,7 @@ header .wrapper .logo {
     font-weight: 1000;
     color: white;
     margin-left: 100px;
+    margin-bottom: 100px;
 }
 .about-us-bottom .bottom-right{
     width: 100%;
@@ -755,7 +769,7 @@ header .wrapper .logo {
     align-items: center;
 }
 .about-us-bottom .bottom-right img{
-    width: 80%;
+    width: 60%;
     height: auto;
     display: flex;
     justify-content: center;
